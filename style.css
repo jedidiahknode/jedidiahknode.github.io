@@ -1,13 +1,23 @@
+:root {
+  --msu-spartan-green: #18453B;
+  --msu-kelly-green: #008208;
+  --msu-lime-green: #7BBD00;
+  --msu-excellence-green: #0B9A6D;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Garamond", serif;
   margin: 0;
   line-height: 1.6;
-  background: #fff;
-  color: #222;
+  background: var(--white);
+  color: var(--black);
 }
+
+/* Header & Nav */
 header {
-  background: #f8f8f8;
-  border-bottom: 1px solid #ddd;
+  background: var(--msu-spartan-green);
   padding: 1rem;
 }
 nav {
@@ -17,12 +27,15 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: #333;
+  color: var(--white);
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 nav a:hover {
-  color: #007acc;
+  color: var(--msu-lime-green);
 }
+
+/* Main Content */
 main {
   max-width: 800px;
   margin: 2rem auto;
@@ -30,19 +43,48 @@ main {
 }
 h1, h2 {
   font-weight: 600;
+  color: var(--msu-spartan-green);
 }
+a {
+  color: var(--msu-excellence-green); /* Hyperlinks */
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--msu-kelly-green);
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
-  border-top: 1px solid #ddd;
   margin-top: 2rem;
+  background: var(--msu-spartan-green);
+  color: var(--white);
 }
+footer a {
+  color: var(--white);
+}
+footer a:hover {
+  color: var(--msu-lime-green);
+}
+
+/* Social Icons */
 .social-icons a {
   margin: 0 0.5rem;
   font-size: 1.4rem;
-  color: #333;
+  color: var(--white);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 .social-icons a:hover {
-  color: #007acc;
+  color: var(--msu-lime-green);
+}
+
+/* Profile Pic */
+.profile-pic {
+  display: block;
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  border: 3px solid var(--msu-excellence-green);
 }
